@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin_dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard</h1>
+      <p class="admin-info">
+        👤 Admin: Mohammed Salman | ✉️ admin@foodtrack.com
+      </p>
+    </header>
+
+    <main>
+      <div class="welcome" id="welcome">
+        <h2>Welcome to Food Donation Tracker</h2>
+        <p>Click a button below to view details</p>
+      </div>
+
+      <div class="button-section">
+        <button onclick="showDetails('user')">Show Donor Details</button>
+        <button onclick="showDetails('ngo')">Show NGO Details</button>
+      </div>
+
+      <div id="userDetails" class="card hidden">
+        <h2>Donor (User) Details</h2>
+        <p><strong>Name:</strong> Mohammed Salman</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> salman@gmail.com</p>
+        <p><strong>Food:</strong> Cooked - Biryani</p>
+        <p><strong>Quantity:</strong> 25 packs</p>
+        <p><strong>Location:</strong> Vellore</p>
+        <p><strong>Received by NGO:</strong> Helping Hands | +91 91234 56789</p>
+      </div>
+
+      <div id="ngoDetails" class="card hidden">
+        <h2>NGO Details</h2>
+        <p><strong>Name:</strong> Helping Hands</p>
+        <p><strong>Phone:</strong> +91 91234 56789</p>
+        <p><strong>Email:</strong> helpinghands@gmail.com</p>
+        <p><strong>Address:</strong> Gandhi Street, Vellore</p>
+        <p>
+          <strong>Received Food From:</strong> Mohammed Salman | +91 98765 43210
+        </p>
+      </div>
+    </main>
+
+    <script src="admin_dashboard.js"></script>
+  </body>
+</html>
